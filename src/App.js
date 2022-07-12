@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+// import Login from './components/String/String.js'
+// import Book from "./components/Array/Array.js";
+import Object from "./components/object/Object";
+import "./App.css";
 
-function App() {
+const App = () => {
+  // const arr = ["Afifa", "Bilal", "Cat", "Dog"];
+  // const num = ["1", "2", "3", "4"];
+  const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <h1 className=' text-center'>hi</h1>
+      <Login b="learning react js"/> */}
+      {/* <Book arr={arr} title="Story Books" num={num} /> */}
+      <Object person={person}/>
+      
     </div>
   );
-}
+};
 
 export default App;
